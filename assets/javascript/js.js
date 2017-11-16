@@ -38,7 +38,7 @@ $(document).on("click", ".topics-button", function() {
             var results = response.data;
             for (var i = 0; i < results.length; i++) {
 
-                    var gifDiv = $("<div>");
+                    var gifDiv = $("<div class=\"gif\">");
                     // Stores photo rating
                     var rates = results[i].rating;
                     //Creates paragraph
@@ -50,7 +50,7 @@ $(document).on("click", ".topics-button", function() {
                     var animated = results[i].images.fixed_height.url;
                     //Creates image class
                     var image = $("<img>");
-                    image.attr("src", results[i].images.fixed_height_still.url).val(i);
+                    image.attr("src", still);
                     image.attr("data-still", still);
                     image.attr("data-animate", animated);
                     image.attr("data-state", "still");

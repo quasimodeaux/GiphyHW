@@ -11,6 +11,11 @@ body {
     width: 800px;
 }
 
+.gif {
+    float:left;
+    padding:10px;
+}
+
 #topicLames {
     margin:auto;
     width:800px;
